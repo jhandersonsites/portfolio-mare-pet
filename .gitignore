@@ -1,0 +1,5 @@
+*.md
+!README.md
+Thumbs.db
+desktop.ini
+.DS_Store

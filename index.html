@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veterinário e Banho e Tosa em Vitória, ES | Maré Pet</title>
+<meta name="description" content="Maré Pet: clínica veterinária e banho e tosa na Praia do Canto, Vitória, ES. Consulta, vacinação, exames, cirurgia e emergência para cães e gatos.">
+
+<meta property="og:title" content="Maré Pet — Clínica Veterinária e Banho e Tosa em Vitória, ES">
+<meta property="og:description" content="Consulta, vacinação, exames, cirurgia, banho e tosa e emergência para cães e gatos na Praia do Canto, Vitória, ES.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="img/hero.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d5665'/%3E%3Cpath d='M6 20c2-3 4-3 6 0s4 3 6 0 4-3 6 0' stroke='%23f7f3ec' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='12' r='3.4' fill='%23f7f3ec'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --areia: #f7f3ec;
+    --tinta: #14313a;
+    --petroleo: #1d5665;
+    --coral: #c2543f;
+    --urgencia: #a32d1c;
+    --branco: #ffffff;
+    --linha: rgba(20, 49, 58, 0.12);
+    --radius-card: 16px;
+    --radius-pill: 999px;
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, sans-serif;
+    --bar-height: 68px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--tinta);
+    background: var(--areia);
+    padding-bottom: calc(var(--bar-height) + 12px);
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 900px) {
+    body { padding-bottom: 0; }
+  }
+
+  img { max-width: 100%; display: block; }
+
+  h1, h2, h3 { font-family: var(--font-serif); font-weight: 700; line-height: 1.15; margin: 0; color: var(--tinta); }
+  p { margin: 0; }
+  ul { margin: 0; padding: 0; list-style: none; }
+  a { color: inherit; }
+
+  .accent {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 700;
+    color: var(--petroleo);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap; border: 0;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 12px; top: -60px;
+    background: var(--tinta);
+    color: var(--areia);
+    padding: 12px 18px;
+    border-radius: 8px;
+    z-index: 200;
+    transition: top 0.2s ease;
+  }
+  .skip-link:focus { top: 12px; }
+
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    outline: 3px solid var(--petroleo);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* ---------- Botões ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 12px 26px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+  .btn:hover { transform: translateY(-1px); }
+
+  .btn-primary { background: var(--petroleo); color: var(--areia); }
+  .btn-primary:hover { background: #164654; }
+
+  .btn-coral { background: var(--coral); color: var(--branco); }
+  .btn-coral:hover { background: #a8462f; }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--tinta);
+    border-color: var(--linha);
+  }
+  .btn-outline:hover { border-color: var(--petroleo); }
+
+  .btn-ghost-light {
+    background: rgba(247,243,236,0.12);
+    color: var(--areia);
+    border-color: rgba(247,243,236,0.5);
+  }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    background: var(--areia);
+    border-bottom: 1px solid var(--linha);
+  }
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 16px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--tinta);
+    text-decoration: none;
+  }
+  .logo svg { flex-shrink: 0; }
+
+  .top-nav {
+    display: none;
+  }
+  .top-actions {
+    display: none;
+  }
+
+  @media (min-width: 900px) {
+    .top-nav {
+      display: flex;
+      gap: 28px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .top-nav a { text-decoration: none; padding: 6px 2px; border-bottom: 2px solid transparent; }
+    .top-nav a:hover { border-bottom-color: var(--petroleo); }
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .top-actions .btn { padding: 10px 18px; font-size: 14.5px; min-height: 40px; }
+  }
+
+  /* ---------- Barra fixa mobile ---------- */
+  .fixed-bar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 100;
+    display: flex;
+    background: var(--tinta);
+    border-top: 1px solid rgba(247,243,236,0.15);
+    box-shadow: 0 -4px 16px rgba(20,49,58,0.25);
+  }
+  @media (min-width: 900px) {
+    .fixed-bar { display: none; }
+  }
+  .fixed-bar button,
+  .fixed-bar a {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: var(--bar-height);
+    background: transparent;
+    border: none;
+    color: var(--areia);
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 4px;
+  }
+  .fixed-bar svg { width: 22px; height: 22px; }
+  .fixed-bar .fixed-bar-call {
+    background: var(--coral);
+    color: var(--branco);
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    min-height: 78vh;
+    max-height: 720px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background: var(--tinta);
+  }
+  /* Abaixo de 900px a barra fixa ocupa a base da tela: o hero precisa
+     sobrar espaço garantido para a faixa de emergência não ficar atrás dela. */
+  @media (max-width: 899px) {
+    .hero {
+      min-height: 380px;
+      height: calc(100vh - 220px);
+      max-height: 620px;
+    }
+  }
+  .hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(20,49,58,0.92) 0%, rgba(20,49,58,0.55) 18%, rgba(20,49,58,0) 40%);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 40px 20px 44px;
+    color: var(--areia);
+    text-shadow: 0 2px 14px rgba(20,49,58,0.55);
+  }
+  .hero-content .container { padding: 0; max-width: 760px; margin: 0; }
+  .hero h1 {
+    color: var(--areia);
+    font-size: clamp(30px, 6vw, 50px);
+    max-width: 14ch;
+  }
+  .hero .accent { color: inherit; }
+  .hero-rule {
+    width: 64px;
+    height: 2px;
+    background: var(--coral);
+    margin: 18px 0;
+    border: none;
+  }
+  .hero-lead {
+    font-size: 17px;
+    max-width: 42ch;
+    color: rgba(247,243,236,0.92);
+    margin-bottom: 24px;
+  }
+
+  /* ---------- Faixa de emergência ---------- */
+  .emergencia {
+    background: var(--urgencia);
+    color: var(--branco);
+  }
+  .emergencia .container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .emergencia p {
+    font-size: 15.5px;
+    font-weight: 500;
+    max-width: 54ch;
+  }
+  .emergencia a.tel {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 6px 4px;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+  }
+  .emergencia a.tel:hover { border-bottom-color: var(--branco); }
+  .emergencia svg { flex-shrink: 0; }
+
+  /* Compacta no mobile: soma com a altura reduzida do hero para garantir
+     que o telefone fique visível acima da barra fixa, sem rolar. */
+  @media (max-width: 899px) {
+    .emergencia .container { padding-top: 12px; padding-bottom: 12px; gap: 8px; }
+    .emergencia p { font-size: 14px; line-height: 1.4; }
+    .emergencia a.tel { font-size: 19px; padding: 4px; }
+  }
+
+  /* ---------- Seções genéricas ---------- */
+  section { padding: 64px 0; }
+  .section-head {
+    max-width: 62ch;
+    margin-bottom: 40px;
+  }
+  .section-head h2 {
+    font-size: clamp(26px, 4vw, 36px);
+  }
+  .section-head .kicker {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--petroleo);
+    margin-bottom: 10px;
+  }
+  .section-head p.lead {
+    margin-top: 14px;
+    font-size: 17px;
+    color: rgba(20,49,58,0.82);
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.is-visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ---------- Serviços ---------- */
+  .servicos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 640px) {
+    .servicos-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .servicos-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .card-servico {
+    background: var(--branco);
+    border: 1px solid var(--linha);
+    border-radius: var(--radius-card);
+    padding: 26px 24px;
+  }
+  .card-servico .icon-wrap {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: rgba(29,86,101,0.1);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+  }
+  .card-servico .icon-wrap svg { width: 26px; height: 26px; stroke: var(--petroleo); }
+  .card-servico h3 { font-size: 19px; margin-bottom: 8px; }
+  .card-servico p.desc { font-size: 15.5px; color: rgba(20,49,58,0.78); margin-bottom: 14px; }
+  .card-servico .info {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--tinta);
+    background: var(--areia);
+    border: 1px solid var(--linha);
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+  }
+  .card-servico .info + .info { margin-left: 8px; margin-top: 8px; }
+
+  /* ---------- Como é a visita ---------- */
+  .passos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  @media (min-width: 800px) {
+    .passos { grid-template-columns: repeat(4, 1fr); }
+  }
+  .passo {
+    position: relative;
+    padding: 0 0 32px 56px;
+    border-left: 2px solid var(--linha);
+  }
+  @media (min-width: 800px) {
+    .passo { padding: 56px 20px 0 0; border-left: none; border-top: 2px solid var(--linha); }
+  }
+  .passo:last-child { padding-bottom: 0; }
+  .passo .num {
+    position: absolute;
+    left: -21px; top: -2px;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--petroleo);
+    color: var(--areia);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  @media (min-width: 800px) {
+    .passo .num { left: 0; top: -21px; }
+  }
+  .passo h3 { font-size: 17.5px; margin-bottom: 8px; }
+  .passo p { font-size: 15.5px; color: rgba(20,49,58,0.78); }
+
+  /* ---------- Sobre ---------- */
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (min-width: 900px) {
+    .sobre-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .sobre-media {
+    position: relative;
+    padding: 0 20px 20px 0;
+    max-width: 420px;
+  }
+  .sobre-media::before {
+    content: "";
+    position: absolute;
+    inset: 20px -20px -20px 20px;
+    background: var(--petroleo);
+    border-radius: var(--radius-card);
+    z-index: 0;
+  }
+  @media (min-width: 900px) { .sobre-media { padding: 0 28px 28px 0; } }
+  .sobre-media img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: var(--radius-card);
+  }
+  .sobre-texto p { color: rgba(20,49,58,0.85); margin-bottom: 16px; font-size: 17px; }
+  .sobre-texto p:last-child { margin-bottom: 0; }
+
+  /* ---------- Banho e tosa ---------- */
+  .banho-tosa { background: var(--tinta); color: var(--areia); }
+  .banho-tosa .section-head h2 { color: var(--areia); }
+  .banho-tosa .section-head .kicker { color: #7bb5c4; }
+  .banho-tosa .accent { color: #e7a893; }
+  .banho-tosa .section-head p.lead { color: rgba(247,243,236,0.8); }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 700px) {
+    .galeria { grid-template-columns: repeat(4, 1fr); }
+  }
+  .galeria img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radius-card);
+  }
+
+  .video-destaque {
+    max-width: 340px;
+    margin: 0 0 28px;
+  }
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    background: var(--tinta);
+  }
+  .video-wrap video {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+  }
+  .video-play-btn {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(20,49,58,0.35);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .video-play-btn .circulo {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: var(--areia);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .video-play-btn svg { width: 26px; height: 26px; stroke: var(--tinta); fill: var(--tinta); margin-left: 3px; }
+  .video-caption {
+    font-size: 13.5px;
+    color: rgba(247,243,236,0.7);
+    margin-top: 10px;
+  }
+
+  /* ---------- Depoimentos ---------- */
+  .depo-tag {
+    display: inline-block;
+    font-size: 13px;
+    color: rgba(20,49,58,0.65);
+    background: rgba(20,49,58,0.06);
+    border: 1px solid var(--linha);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    margin-bottom: 28px;
+  }
+  .depo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 800px) {
+    .depo-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .card-depo {
+    background: var(--branco);
+    border: 1px solid var(--linha);
+    border-radius: var(--radius-card);
+    padding: 26px 24px;
+  }
+  .card-depo p.fala { font-size: 16px; color: rgba(20,49,58,0.85); margin-bottom: 16px; }
+  .card-depo p.fala::before { content: open-quote; }
+  .card-depo p.fala::after { content: close-quote; }
+  .card-depo .autor { display: flex; align-items: center; gap: 12px; }
+  .card-depo .avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--petroleo);
+    color: var(--areia);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-serif); font-weight: 700; font-size: 15px;
+    flex-shrink: 0;
+  }
+  .card-depo .nome { font-weight: 600; font-size: 15px; }
+  .card-depo .pet { font-size: 13.5px; color: rgba(20,49,58,0.6); }
+
+  /* ---------- FAQ ---------- */
+  .faq-list { max-width: 760px; }
+  .faq-item {
+    border-bottom: 1px solid var(--linha);
+  }
+  .faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 4px;
+    font-weight: 600;
+    font-size: 16.5px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary .plus {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    border: 1.5px solid var(--petroleo);
+    position: relative;
+  }
+  .faq-item summary .plus::before,
+  .faq-item summary .plus::after {
+    content: "";
+    position: absolute;
+    background: var(--petroleo);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .faq-item summary .plus::before { width: 10px; height: 2px; }
+  .faq-item summary .plus::after { width: 2px; height: 10px; }
+  .faq-item[open] summary .plus::after { display: none; }
+  .faq-item .faq-answer {
+    padding: 0 4px 22px;
+    font-size: 16px;
+    color: rgba(20,49,58,0.82);
+    max-width: 68ch;
+  }
+
+  /* ---------- Contato ---------- */
+  .contato { background: var(--areia); }
+  .contato-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 800px) {
+    .contato-grid { grid-template-columns: 1.1fr 1fr; }
+  }
+  .contato-card {
+    background: var(--branco);
+    border: 1px solid var(--linha);
+    border-radius: var(--radius-card);
+    padding: 28px;
+  }
+  .contato-card .linha-contato {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--linha);
+  }
+  .contato-card .linha-contato:last-child { border-bottom: none; }
+  .contato-card .linha-contato svg { flex-shrink: 0; width: 22px; height: 22px; stroke: var(--petroleo); margin-top: 2px; }
+  .contato-card .linha-contato strong { display: block; font-size: 14px; color: rgba(20,49,58,0.6); font-weight: 600; margin-bottom: 2px; }
+  .contato-card .linha-contato a { text-decoration: underline; text-decoration-color: var(--linha); }
+  .btn-like {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    font-size: 17px;
+    color: var(--tinta);
+    text-decoration: underline;
+    text-decoration-color: var(--linha);
+    cursor: default;
+  }
+  .contato-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+  .contato-actions [aria-disabled="true"] { cursor: default; opacity: 0.85; }
+
+  table.horarios { width: 100%; border-collapse: collapse; }
+  table.horarios caption { text-align: left; font-weight: 600; margin-bottom: 12px; font-size: 15px; }
+  table.horarios th, table.horarios td {
+    text-align: left;
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--linha);
+    font-size: 15.5px;
+  }
+  table.horarios th { color: rgba(20,49,58,0.6); font-weight: 600; width: 55%; }
+
+  .fictício-nota {
+    font-size: 13.5px;
+    color: rgba(20,49,58,0.55);
+    margin-top: 16px;
+  }
+
+  /* ---------- Rodapé ---------- */
+  footer.site-footer {
+    background: var(--tinta);
+    color: rgba(247,243,236,0.85);
+    padding: 40px 0 28px;
+  }
+  footer.site-footer .foot-logo {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--areia);
+    margin-bottom: 8px;
+  }
+  footer.site-footer p { font-size: 14.5px; margin-bottom: 6px; }
+  footer.site-footer .conceitual {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(247,243,236,0.15);
+    font-size: 13px;
+    color: rgba(247,243,236,0.55);
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="#topo">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#1d5665"/>
+        <path d="M6 20c2-3 4-3 6 0s4 3 6 0 4-3 6 0" stroke="#f7f3ec" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <circle cx="16" cy="12" r="3.4" fill="#f7f3ec"/>
+      </svg>
+      Maré Pet
+    </a>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#banho-tosa">Banho e tosa</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="top-actions">
+      <a class="btn btn-outline" href="#contato">
+        Agendar
+      </a>
+      <a class="btn btn-primary" href="tel:+552790000000">
+        Ligar
+      </a>
+      <a class="btn btn-outline" href="#contato">
+        Como chegar
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="topo" aria-label="Apresentação">
+    <img src="img/hero.jpg" alt="Tutora agachada abraçando e beijando um golden retriever ao ar livre" width="1200" height="1500">
+    <div class="hero-content">
+      <div class="container">
+        <h1>Seu pet <span class="accent">entendido</span> antes de ser tratado.</h1>
+        <hr class="hero-rule">
+        <p class="hero-lead">Consulta, vacinação, exames, cirurgia e banho e tosa para cães e gatos, na Praia do Canto, Vitória — ES.</p>
+        <a class="btn btn-coral" href="#contato">Agendar consulta</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="emergencia">
+    <div class="container">
+      <p>Emergência? Ligue agora — atendemos sem agendamento das 8h às 20h, todos os dias.</p>
+      <a class="tel" href="tel:+552790000000">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        (27) 90000-0000
+      </a>
+    </div>
+  </div>
+
+  <section id="servicos">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="kicker">Serviços</span>
+        <h2>Cuidado <span class="accent">completo</span>, do banho à cirurgia.</h2>
+        <p class="lead">Seis frentes de atendimento pensadas para acompanhar seu pet em cada fase — da rotina ao imprevisto.</p>
+      </div>
+
+      <div class="servicos-grid">
+        <article class="card-servico fade-up">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4v6a5 5 0 0 0 10 0V4"/><circle cx="19" cy="15" r="3"/><path d="M14 10c0 4-2 8-6 8s-6-2-6-6"/>
+            </svg>
+          </div>
+          <h3>Consulta clínica</h3>
+          <p class="desc">Avaliação completa do seu pet, com orientação clara sobre o que fazer a seguir.</p>
+          <span class="info">Cerca de 30 min</span><span class="info">Agendamento necessário</span>
+        </article>
+
+        <article class="card-servico fade-up">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2l4 4-9 9-5 1 1-5z"/><path d="M14.5 5.5l4 4"/><path d="M2 22l4.5-4.5"/>
+            </svg>
+          </div>
+          <h3>Vacinação</h3>
+          <p class="desc">Imunização em dia, com orientação sobre o calendário ideal para a idade e o porte do pet.</p>
+          <span class="info">Cerca de 15 min</span><span class="info">Leve a carteirinha, se tiver</span>
+        </article>
+
+        <article class="card-servico fade-up">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>
+            </svg>
+          </div>
+          <h3>Exames</h3>
+          <p class="desc">Exames laboratoriais e de imagem para investigar com precisão o que está incomodando.</p>
+          <span class="info">Alguns pedem jejum de 8–12h</span><span class="info">Confirme no agendamento</span>
+        </article>
+
+        <article class="card-servico fade-up">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2v6"/><path d="M9 5h6"/><path d="M6 22c0-6 3-9 6-9s6 3 6 9"/>
+            </svg>
+          </div>
+          <h3>Cirurgia</h3>
+          <p class="desc">Procedimentos cirúrgicos com acompanhamento antes, durante e depois do centro cirúrgico.</p>
+          <span class="info">Requer avaliação prévia</span><span class="info">Agendar com antecedência</span>
+        </article>
+
+        <article class="card-servico fade-up">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2c3 4 6 7.5 6 11.5a6 6 0 0 1-12 0C6 9.5 9 6 12 2z"/>
+            </svg>
+          </div>
+          <h3>Banho e tosa</h3>
+          <p class="desc">Banho e tosa higiênica ou na tesoura, com produtos indicados para o tipo de pelo.</p>
+          <span class="info">1 a 2h, conforme porte</span><span class="info">Agendamento recomendado</span>
+        </article>
+
+        <article class="card-servico fade-up">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/><path d="M9 12h2l1-2 2 4 1-2h2"/>
+            </svg>
+          </div>
+          <h3>Emergência</h3>
+          <p class="desc">Atendimento prioritário para situações urgentes, sem precisar de agendamento.</p>
+          <span class="info">Atendimento imediato</span><span class="info">Ligue antes, se possível</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="kicker">Como é a visita</span>
+        <h2>Quatro passos, sem surpresa no caminho.</h2>
+        <p class="lead">A ansiedade de levar o pet ao veterinário costuma vir do que a gente não sabe o que vai acontecer. Por isso, é assim:</p>
+      </div>
+
+      <div class="passos">
+        <div class="passo fade-up">
+          <span class="num" aria-hidden="true">1</span>
+          <h3>Agendamento</h3>
+          <p>Marque o horário pelo WhatsApp ou telefone e conte um pouco do que está acontecendo.</p>
+        </div>
+        <div class="passo fade-up">
+          <span class="num" aria-hidden="true">2</span>
+          <h3>Chegada e acolhimento</h3>
+          <p>Na recepção, seu pet é pesado e observado enquanto você dá mais detalhes à equipe.</p>
+        </div>
+        <div class="passo fade-up">
+          <span class="num" aria-hidden="true">3</span>
+          <h3>Consulta</h3>
+          <p>Avaliação com calma, sem pressa, para entender o quadro antes de qualquer decisão.</p>
+        </div>
+        <div class="passo fade-up">
+          <span class="num" aria-hidden="true">4</span>
+          <h3>Orientação e retorno</h3>
+          <p>Você sai com o cuidado explicado e já sabe se, e quando, precisa voltar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-media fade-up">
+          <img src="img/sobre.jpg" alt="Veterinário com estetoscópio examinando um gato laranja na mesa de consulta" width="900" height="1125" loading="lazy">
+        </div>
+        <div class="sobre-texto fade-up">
+          <span class="kicker">Sobre a clínica</span>
+          <h2>Uma clínica pensada para quem tem <span class="accent">medo</span> de clínica.</h2>
+          <p>A Maré Pet nasceu de uma ideia simples: consulta de pet não devia ser um momento de aflição — nem para o animal, nem para quem ama ele.</p>
+          <p>Aqui, cada visita é conduzida com calma. A equipe explica cada passo antes de agir, e trata cada pet do jeito que ele precisa naquele dia — sem pressa e sem sustos.</p>
+          <p>Atendemos cães e gatos de todos os portes, na Praia do Canto, Vitória — ES.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banho-tosa" id="banho-tosa">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="kicker">Banho e tosa</span>
+        <h2>Banho e tosa que vira parte da <span class="accent">rotina</span>.</h2>
+        <p class="lead">Produtos indicados para o tipo de pelo, secagem com cuidado e tosa na medida certa — higiênica ou completa, na tesoura ou na máquina.</p>
+      </div>
+
+      <div class="galeria">
+        <img class="fade-up" src="img/banho-tosa-1.jpg" alt="Yorkshire sendo ensaboado durante o banho" width="800" height="800" loading="lazy">
+        <img class="fade-up" src="img/banho-tosa-2.jpg" alt="Tosadora aparando o pelo de um yorkshire com tesoura" width="800" height="800" loading="lazy">
+        <img class="fade-up" src="img/banho-tosa-3.jpg" alt="Cachorro shih tzu já tosado, em pé sobre a mesa do salão" width="800" height="800" loading="lazy">
+        <img class="fade-up" src="img/banho-tosa-4.jpg" alt="Yorkshire enrolado em uma toalha depois do banho" width="800" height="800" loading="lazy">
+      </div>
+
+      <div class="video-destaque fade-up">
+        <div class="video-wrap">
+          <video id="video-banho-tosa" muted autoplay loop playsinline preload="metadata"
+                 poster="img/banho-tosa-poster.jpg" width="960" height="960"
+                 aria-label="Vídeo mostrando uma tosadora aparando o pelo de um yorkshire sobre a mesa">
+            <source src="img/banho-tosa.mp4" type="video/mp4">
+          </video>
+          <button type="button" class="video-play-btn" id="video-play-btn" hidden aria-label="Reproduzir vídeo da tosa">
+            <span class="circulo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </button>
+        </div>
+        <p class="video-caption">Bastidores da tosa — 8 segundos, sem som.</p>
+      </div>
+
+      <a class="btn btn-coral" href="#contato">Agendar banho e tosa</a>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="kicker">Depoimentos</span>
+        <h2>O que dizem os tutores.</h2>
+      </div>
+      <p class="depo-tag fade-up">Conteúdo ilustrativo — depoimentos fictícios, criados para fins de demonstração deste projeto.</p>
+
+      <div class="depo-grid">
+        <article class="card-depo fade-up">
+          <p class="fala">Levei o Toffee com o coração apertado e saí tranquila. Explicaram tudo antes de fazer qualquer coisa.</p>
+          <div class="autor">
+            <span class="avatar" aria-hidden="true">AE</span>
+            <div>
+              <p class="nome">Ana Exemplo</p>
+              <p class="pet">tutora do Toffee</p>
+            </div>
+          </div>
+        </article>
+        <article class="card-depo fade-up">
+          <p class="fala">A Mel odeia sair de casa, mas dessa vez nem estranhou tanto. Equipe com muita paciência.</p>
+          <div class="autor">
+            <span class="avatar" aria-hidden="true">RI</span>
+            <div>
+              <p class="nome">Rafael Ilustrativo</p>
+              <p class="pet">tutor da Mel</p>
+            </div>
+          </div>
+        </article>
+        <article class="card-depo fade-up">
+          <p class="fala">O banho e tosa ficou impecável e o Bento voltou pra casa cheiroso e feliz.</p>
+          <div class="autor">
+            <span class="avatar" aria-hidden="true">BM</span>
+            <div>
+              <p class="nome">Beatriz Modelo</p>
+              <p class="pet">tutora do Bento</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="kicker">Dúvidas frequentes</span>
+        <h2>Perguntas que mais chegam por aqui.</h2>
+      </div>
+
+      <div class="faq-list fade-up">
+        <details class="faq-item">
+          <summary>Como funciona a primeira consulta? <span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer">Na primeira visita, a equipe pesa e observa o pet, conversa com você sobre histórico de saúde, alimentação e comportamento, e só então faz o exame clínico. O objetivo é entender o pet inteiro antes de qualquer indicação.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quais vacinas meu pet precisa tomar? <span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer">Varia com a idade, o porte e o estilo de vida do animal. Na consulta de vacinação, a equipe monta um calendário individual e explica o que é essencial e o que é recomendado conforme a rotina do seu pet.</div>
+        </details>
+        <details class="faq-item">
+          <summary>E se for uma emergência fora do horário de atendimento? <span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer">Atendemos emergências das 8h às 20h, todos os dias, sem agendamento. Fora desse horário, procure o pronto-socorro veterinário 24h mais próximo da sua região.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quais formas de pagamento vocês aceitam? <span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer">Cartão de crédito, débito, Pix e dinheiro. Consulte formas de parcelamento diretamente com a recepção no momento do agendamento.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Vocês atendem gatos também? <span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer">Sim. Atendemos cães e gatos de todos os portes e idades, tanto na clínica quanto no banho e tosa.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Preciso agendar o banho e tosa com antecedência? <span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer">É recomendado, especialmente em fins de semana e feriados, quando a agenda costuma lotar mais rápido. Durante a semana, às vezes conseguimos encaixe no mesmo dia.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="kicker">Contato</span>
+        <h2>Fale com a gente.</h2>
+      </div>
+
+      <div class="contato-grid">
+        <div class="contato-card fade-up">
+          <div class="linha-contato">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <strong>Telefone</strong>
+              <a href="tel:+552790000000">(27) 90000-0000</a>
+            </div>
+          </div>
+          <div class="linha-contato">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <div>
+              <strong>WhatsApp</strong>
+              <button type="button" class="btn-like" aria-disabled="true" title="Número fictício — apenas ilustrativo">(27) 90000-0000</button>
+            </div>
+          </div>
+          <div class="linha-contato">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Bairro</strong>
+              Praia do Canto, Vitória - ES
+            </div>
+          </div>
+
+          <div class="contato-actions">
+            <a class="btn btn-primary" href="tel:+552790000000">Ligar agora</a>
+            <button type="button" class="btn btn-outline" aria-disabled="true" title="Número fictício — apenas ilustrativo">Chamar no WhatsApp</button>
+          </div>
+          <p class="fictício-nota">Atendimento fictício, criado para fins de demonstração deste projeto — número e botão de WhatsApp não funcionam de verdade.</p>
+        </div>
+
+        <div class="contato-card fade-up">
+          <table class="horarios">
+            <caption>Horário de atendimento</caption>
+            <tbody>
+              <tr><th scope="row">Segunda a sexta</th><td>8h às 20h</td></tr>
+              <tr><th scope="row">Sábado</th><td>8h às 14h</td></tr>
+              <tr><th scope="row">Domingo</th><td>Fechado, exceto emergência</td></tr>
+              <tr><th scope="row">Emergência</th><td>8h às 20h, todos os dias</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="foot-logo">Maré Pet</p>
+    <p>Clínica Veterinária e Banho e Tosa</p>
+    <p>Vitória e Grande Vitória — ES</p>
+    <p class="conceitual">Projeto conceitual — este negócio é fictício.</p>
+  </div>
+</footer>
+
+<div class="fixed-bar" aria-label="Ações rápidas">
+  <a href="#contato">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    Agendar
+  </a>
+  <a class="fixed-bar-call" href="tel:+552790000000">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Ligar
+  </a>
+  <a href="#contato">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Como chegar
+  </a>
+</div>
+
+<script>
+  (function () {
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var items = document.querySelectorAll('.fade-up');
+
+    if (prefersReduced || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    items.forEach(function (el) { observer.observe(el); });
+  })();
+
+  (function () {
+    var video = document.getElementById('video-banho-tosa');
+    var playBtn = document.getElementById('video-play-btn');
+    if (!video || !playBtn) return;
+
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReduced) {
+      video.removeAttribute('autoplay');
+      video.pause();
+      playBtn.hidden = false;
+      playBtn.addEventListener('click', function () {
+        video.play();
+        playBtn.hidden = true;
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
